@@ -24,8 +24,9 @@ const ExpenseForm = (props) => {
       amount: enteredAmount,
       date: new Date(enteredDate)
     };
+    //console.log ("Your expense data is: ", expenseData);
     props.onSaveExpenseData(expenseData); //This function is called, passed in from NewExpense.js
-    setEnteredTitle('');                  //Set the entered data to empty strings as default
+    setEnteredTitle('');                  //Set the entered data to empty strings as default after user submission
     setEnteredAmount('');
     setEnteredDate('');
   }
